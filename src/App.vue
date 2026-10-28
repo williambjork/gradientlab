@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import GradientCanvas from './components/GradientCanvas.vue'
+import SectionMotes from './components/SectionMotes.vue'
 import ScrollGauge from './components/ScrollGauge.vue'
 import ThemeMenu from './components/ThemeMenu.vue'
 import { useScrollSections } from './composables/useScrollSections'
@@ -20,6 +21,7 @@ const grain = ref(0.22)
     :background="BACKGROUND"
     :grain="grain"
   />
+  <SectionMotes :position="position" />
 
   <main class="relative">
     <section v-for="preset in presets" :key="preset.id" :aria-label="preset.name" class="h-dvh snap-start" />

@@ -11,8 +11,8 @@ const FIELD_SPRING: SpringConfig = { stiffness: 25, damping: 16, mass: 1 }
 
 const INTERACTION = {
   idle: { pull: 0, radius: 260 },
-  hover: { pull: 0.3, radius: 320 },
-  press: { pull: 0.65, radius: 440 },
+  hover: { pull: 0.22, radius: 320 },
+  press: { pull: 0.5, radius: 440 },
 }
 
 /** Whole-field drift in virtual units when the pointer is at the viewport edge */
