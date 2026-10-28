@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+html,
+body {
+  background: #0b0c0e;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.grain-range {
+  appearance: none;
+  height: 2px;
+  border-radius: 9999px;
+  background: rgb(255 255 255 / 0.2);
+  cursor: pointer;
+}
+
+.grain-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px;
+  background: white;
+}
+
+.grain-range::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border: 0;
+  border-radius: 9999px;
+  background: white;
+}
